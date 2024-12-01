@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0-android</TargetFramework>
+		<SupportedOSPlatformVersion>21.0</SupportedOSPlatformVersion>
+		<OutputType>Exe</OutputType>
+		<RootNamespace>SchoolSportsApp</RootNamespace>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseMaui>true</UseMaui>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ClosedXML" Version="0.104.2" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.93" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.93" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+		<PackageReference Include="SQLitePCLRaw.lib.e_sqlite3" Version="2.1.10" />
+		<PackageReference Include="SQLitePCLRaw.lib.e_sqlite3.linux" Version="1.1.14" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SchoolSportsApp\SchoolSportsApp.csproj" />
+	</ItemGroup>
+
+</Project>

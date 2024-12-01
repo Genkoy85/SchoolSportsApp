@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SchoolSportsApp.MainPage">
+    <StackLayout Padding="20">
+        <Button Text="Импортировать из Excel" Clicked="OnImportExcelClicked" />
+        <ListView x:Name="StudentListView" />
+
+        <Button Text="Добавить норматив" Clicked="OnAddNormativeClicked" />
+
+        <Label Text="Выберите отделение:" />
+        <Picker x:Name="BranchPicker" Title="Отделение" />
+
+        <Label Text="Выберите класс:" />
+        <Picker x:Name="ClassPicker" Title="Класс" />
+
+        <Label Text="Выберите ученик:" />
+        <Picker x:Name="StudentPicker" Title="Ученик" />
+
+        <Label Text="Выберите норматив:" />
+        <Picker x:Name="NormativePicker" Title="Норматив">
+            <Picker.Items>
+                <x:String>Бег на 30 метров</x:String>
+                <x:String>Бег на 300 метров</x:String>
+                <x:String>Бег на 1000 метров</x:String>
+                <x:String>Челночный бег</x:String>
+                <x:String>Метание на дальность</x:String>
+                <x:String>Прыжки через скакалку за 1 мин</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Text="Введите результат:" />
+        <Entry x:Name="ResultEntry" Placeholder="Результат" Keyboard="Numeric" />
+
+        <Button Text="Сохранить результат" Clicked="OnSaveResultClicked" />
+    </StackLayout>
+</ContentPage>
